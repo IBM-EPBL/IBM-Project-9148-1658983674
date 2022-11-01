@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Rozen Berg",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 259.31,
+      "left": 31.06,
+      "rotate": 0,
+      "hide": false,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic",
+      "top": 86.99,
+      "left": 109.89,
+      "rotate": 0,
+      "hide": false,
+      "attrs": { "distance": "100" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "ultrasonic:GND", "black", [ "v-8", "*", "v8" ] ],
+    [ "uno:13", "ultrasonic:ECHO", "green", [] ],
+    [ "uno:12", "ultrasonic:TRIG", "purple", [ "*", "v4" ] ],
+    [ "uno:5V", "ultrasonic:VCC", "red", [ "v16", "h-96", "*", "v12" ] ]
+  ]
+}
