@@ -1,0 +1,11 @@
+var email = msg.enteredFields.email;
+msg.payload={
+    "selector":{
+        "entry-type":"user",
+        "email":{
+            "$eq":email
+        }
+    },
+    "fields":["email"]
+}
+return msg;

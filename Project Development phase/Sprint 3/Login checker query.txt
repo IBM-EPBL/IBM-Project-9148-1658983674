@@ -1,0 +1,16 @@
+if(msg.req==null){
+    email = msg.payload.email;
+}
+else{
+    var email = msg.req.params.email;
+}
+msg.enteredPassword = msg.payload.password;
+msg.payload={
+    "selector":{
+        "email":{
+            "$eq":email
+        }
+    },
+    "fields":["email","password"]
+}
+return msg;

@@ -1,0 +1,2217 @@
+ [
+   {
+        "id": "2a897c12e0e624a9",
+        "type": "debug",
+        "z": "684ad947b5bb77ec",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "495b28822cf843e7",
+        "type": "link in",
+        "z": "fa35390fd425e7e7",
+        "name": "link to home",
+        "links": [
+            "d7f7ba7a475fabaf",
+            "63cd32631759d904",
+            "dda93fbca03005c8",
+            "7f3b70454f6d880d",
+            "f7f0faca9e87dd84"
+        ],
+        "x": 235,
+        "y": 180,
+        "wires": [
+            [
+                "bce6ce180ce806a4"
+            ]
+        ]
+    },
+    {
+        "id": "78537267b1fc606f",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Live tracker",
+        "group": "56a42a68015d00ae",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Live tracking",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "30cc3840a56f1ee7"
+            ]
+        ]
+    },
+    {
+        "id": "1b1c0834eecf6fe3",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Recent notifications",
+        "group": "56a42a68015d00ae",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Recent emergency notifications",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "0c7ee9036db45e58"
+            ]
+        ]
+    },
+    {
+        "id": "558fdca2bbf18a5d",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Location history",
+        "group": "56a42a68015d00ae",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Location history",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "59f524fab72e594d"
+            ]
+        ]
+    },
+    {
+        "id": "59f524fab72e594d",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "homeToLocationHistory",
+        "mode": "link",
+        "links": [
+            "8bce46c4810c1bfb"
+        ],
+        "x": 1055,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0c7ee9036db45e58",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "homeToRecentNotifications",
+        "mode": "link",
+        "links": [
+            "cc89bf53e468dcc2"
+        ],
+        "x": 775,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "471df7fa9b085a27",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Logout",
+        "group": "56a42a68015d00ae",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Logout",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            [
+                "c053ee73c2c26383"
+            ]
+        ]
+    },
+    {
+        "id": "bce6ce180ce806a4",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "30cc3840a56f1ee7"
+            ],
+            [
+                "684ae685fdcfead8"
+            ]
+        ]
+    },
+    {
+        "id": "30cc3840a56f1ee7",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "link to live tracker",
+        "mode": "link",
+        "links": [
+            "12637b590ee8da3a",
+            "ce2448d7e78aaa98"
+        ],
+        "x": 685,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "684ae685fdcfead8",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "4541b6e53cf23b68"
+            ]
+        ]
+    },
+    {
+        "id": "4541b6e53cf23b68",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "home link to login 1",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 505,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c053ee73c2c26383",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 1340,
+        "y": 580,
+        "wires": [
+            [
+                "325514b1eab56575"
+            ]
+        ]
+    },
+    {
+        "id": "325514b1eab56575",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "home link to login 2",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 1545,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3336be4a7a541056",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "group": "56a42a68015d00ae",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Change password",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 300,
+        "wires": [
+            [
+                "33e4c00cc9abcbba"
+            ]
+        ]
+    },
+    {
+        "id": "33e4c00cc9abcbba",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "8709ea52fc5bec57"
+        ],
+        "x": 1175,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cc89bf53e468dcc2",
+        "type": "link in",
+        "z": "b4bcf42eae449190",
+        "name": "link to recent notifications",
+        "links": [
+            "0c7ee9036db45e58"
+        ],
+        "x": 255,
+        "y": 300,
+        "wires": [
+            [
+                "f959f85ce9cf1262",
+                "ca12978f86fefe16"
+            ]
+        ]
+    },
+    {
+        "id": "678735cd50316c20",
+        "type": "ui_table",
+        "z": "b4bcf42eae449190",
+        "group": "cfdd9986a17c2a12",
+        "name": "Recent notifications",
+        "order": 1,
+        "width": 25,
+        "height": "19",
+        "columns": [
+            {
+                "field": "sNo",
+                "title": "Serial number",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lat",
+                "title": "latitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lon",
+                "title": "longitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ca12978f86fefe16",
+        "type": "function",
+        "z": "b4bcf42eae449190",
+        "name": "Recent notifications getter query",
+        "func": "msg.payload = \n    {\n        \"selector\":{\n            \"entry-type\":{\n                \"$eq\":\"notification\"\n            }\n        },\n        \"fields\":[\"lat\",\"lon\",\"time\"]\n    }\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "1964272e77d984bc"
+            ]
+        ]
+    },
+    {
+        "id": "346562b0e570119a",
+        "type": "change",
+        "z": "b4bcf42eae449190",
+        "name": "show and hide groups for recent notifications",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Home_ChangePassword\",\"Home_RecentNotifications\"],\"hide\":[\"Home_LiveTracker\",\"Home_LocationHistory\",\"Home_ChangePassword\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [
+                "e2eff78fe6675b1e"
+            ]
+        ]
+    },
+    {
+        "id": "e2eff78fe6675b1e",
+        "type": "ui_ui_control",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "events": "all",
+        "x": 1060,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f959f85ce9cf1262",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "346562b0e570119a"
+            ],
+            [
+                "b3cb1da083eece36"
+            ]
+        ]
+    },
+    {
+        "id": "b3cb1da083eece36",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "cda223a4ec0c2b5c"
+            ]
+        ]
+    },
+    {
+        "id": "cda223a4ec0c2b5c",
+        "type": "link out",
+        "z": "b4bcf42eae449190",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 995,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1964272e77d984bc",
+        "type": "cloudantplus-selector in",
+        "z": "b4bcf42eae449190",
+        "name": "notification documents getter",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "8df2981db765ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "8df2981db765ca4e",
+        "type": "function",
+        "z": "b4bcf42eae449190",
+        "name": "notifications tabilifier",
+        "func": "if(msg.payload.docs==null){\n    return msg;\n}\nvar notifications = msg.payload.docs;\nmsg.payload =[];\nfor(var i=0;i<notifications.length;i++){\n    var sNo = i+1;\n    var date = notifications[i].time.substring(0,10);\n    var time = notifications[i].time.substring(11,19);\n    var latitude = notifications[i].lat;\n    var longitude = notifications[i].lon;\n    msg.payload[i]={\n        \"sNo\":sNo,\n        \"lat\":latitude,\n        \"lon\":longitude,\n        \"date\":date,\n        \"time\":time\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 400,
+        "wires": [
+            [
+                "678735cd50316c20"
+            ]
+        ]
+    },
+    {
+        "id": "566b3922e82b9ffe",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to signup",
+        "links": [
+            "22c250883aeb39f7",
+            "b343a7375795bf93",
+            "2070f46b81454f64"
+        ],
+        "x": 115,
+        "y": 160,
+        "wires": [
+            [
+                "224c6aed50bb4b31"
+            ]
+        ]
+    },
+    {
+        "id": "5aa10331d33dee96",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "Signup",
+        "info": "",
+        "x": 110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1512b28f050661f3",
+        "type": "ui_text",
+        "z": "68e3898e17f59f01",
+        "group": "9f0413c4fd8e8912",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Signup sucess",
+        "label": "Signup success",
+        "format": "\"Signup successfull\"",
+        "layout": "row-left",
+        "className": "",
+        "x": 1380,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2b02520f5e975f83",
+        "type": "ui_button",
+        "z": "68e3898e17f59f01",
+        "name": "Login button",
+        "group": "8ce4f1c0714bed75",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1170,
+        "y": 560,
+        "wires": [
+            [
+                "cd32c6980fdf0ce2",
+                "ffb228f7839a1e18",
+                "513a4a2f462c3928"
+            ]
+        ]
+    },
+    {
+        "id": "f7a4a16a6a1b7340",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "link out to login",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 1765,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ffb228f7839a1e18",
+        "type": "change",
+        "z": "68e3898e17f59f01",
+        "name": "Hide or show group setter 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_SignupForm\",\"Home_SignUpSuccess\"],\"show\":[\"Home_Login\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 580,
+        "wires": [
+            [
+                "4c628e248541628b"
+            ]
+        ]
+    },
+    {
+        "id": "4c628e248541628b",
+        "type": "ui_ui_control",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "events": "change",
+        "x": 1660,
+        "y": 580,
+        "wires": [
+            [
+                "f7a4a16a6a1b7340"
+            ]
+        ]
+    },
+    {
+        "id": "491cb6a7a50e13f2",
+        "type": "ui_button",
+        "z": "68e3898e17f59f01",
+        "name": "Signup success page Login button",
+        "group": "9f0413c4fd8e8912",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1160,
+        "y": 500,
+        "wires": [
+            [
+                "cd32c6980fdf0ce2"
+            ]
+        ]
+    },
+    {
+        "id": "f0328334bf08e79b",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "Valid signup ",
+        "info": "",
+        "x": 990,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "46b1cf29b662a763",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "If already logged in redirect to home",
+        "info": "",
+        "x": 1420,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cd32c6980fdf0ce2",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "x": 1500,
+        "y": 500,
+        "wires": [
+            [
+                "f7f0faca9e87dd84"
+            ],
+            [
+                "ffb228f7839a1e18"
+            ]
+        ]
+    },
+    {
+        "id": "f7f0faca9e87dd84",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "signup to home",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 1645,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "224c6aed50bb4b31",
+        "type": "ui_form",
+        "z": "68e3898e17f59f01",
+        "name": "SignUp",
+        "label": "",
+        "group": "8ce4f1c0714bed75",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email ",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "D.O.B",
+                "value": "dob",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "pass1",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Re-enter password",
+                "value": "pass2",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": "",
+            "dob": "",
+            "pass1": "",
+            "pass2": ""
+        },
+        "payload": "",
+        "submit": "SignUp",
+        "cancel": "Reset",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "73c05f324d7ec5a6"
+            ]
+        ]
+    },
+    {
+        "id": "73c05f324d7ec5a6",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "client side validations",
+        "func": "var email = msg.payload.email;\nvar password1 = msg.payload.pass1;\nvar password2 = msg.payload.pass2;\nvar dob = msg.payload.dob;\nflow.set(\"email\",email);\nflow.set(\"pass1\",password1);\nflow.set(\"pass2\",password2);\nflow.set(\"dob\",dob);\nif(password1.length<8){\n    msg.payload.warning = \"Passwords must contain atleast 8 characters\";\n}\nelse if(password1!=password2){\n    msg.payload.warning = \"Passwords doesn't match\";\n}\nelse{\n    msg.payload.warning = null;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "7b98170d0d8d4de9"
+            ]
+        ]
+    },
+    {
+        "id": "45209815527b0945",
+        "type": "ui_toast",
+        "z": "68e3898e17f59f01",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1b92133ee6e6792b",
+        "type": "subflow:7ebdbadd2fa727b7",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "x": 870,
+        "y": 120,
+        "wires": [
+            [
+                "1512b28f050661f3",
+                "491cb6a7a50e13f2",
+                "777aa07d47e075ec",
+                "f7213c82eccfcdad"
+            ],
+            [
+                "d959c440e672cd72",
+                "8d83c12e84830910"
+            ]
+        ]
+    },
+    {
+        "id": "7b98170d0d8d4de9",
+        "type": "switch",
+        "z": "68e3898e17f59f01",
+        "name": "Warning switcher",
+        "property": "payload.warning",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "1b92133ee6e6792b"
+            ],
+            [
+                "6bb4d2b3bb6f081e",
+                "8d83c12e84830910"
+            ]
+        ]
+    },
+    {
+        "id": "6bb4d2b3bb6f081e",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "warning setter",
+        "func": "msg.payload=msg.payload.warning;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 220,
+        "wires": [
+            [
+                "45209815527b0945"
+            ]
+        ]
+    },
+    {
+        "id": "777aa07d47e075ec",
+        "type": "change",
+        "z": "68e3898e17f59f01",
+        "name": "Hide or show group setter 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_SignupForm\"],\"show\":[\"Home_SignUpSuccess\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 120,
+        "wires": [
+            [
+                "1a4b279e96b20a14"
+            ]
+        ]
+    },
+    {
+        "id": "1a4b279e96b20a14",
+        "type": "ui_ui_control",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "events": "all",
+        "x": 1640,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7213c82eccfcdad",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Signup success message",
+        "func": "msg.payload=\"Signup success!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 160,
+        "wires": [
+            [
+                "45209815527b0945"
+            ]
+        ]
+    },
+    {
+        "id": "2faf23b231de0d80",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Signup Form data preserver",
+        "func": "var name = flow.get(\"name\");\nvar email = flow.get(\"email\");\nvar dob = flow.get(\"dob\");\nvar pass1 = flow.get(\"pass1\");\nvar pass2 = flow.get(\"pass2\");\nmsg.payload={\n    \"name\":name,\n    \"email\":email,\n    \"dob\":dob,\n    \"pass1\":pass1,\n    \"pass2\":pass2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "2070f46b81454f64"
+            ]
+        ]
+    },
+    {
+        "id": "d959c440e672cd72",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "already registered email warning setter",
+        "func": "msg.payload.warning = \"Email is already registered!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "6bb4d2b3bb6f081e"
+            ]
+        ]
+    },
+    {
+        "id": "388da78db955a905",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to signup form data preserver",
+        "links": [
+            "8d83c12e84830910"
+        ],
+        "x": 265,
+        "y": 300,
+        "wires": [
+            [
+                "2faf23b231de0d80"
+            ]
+        ]
+    },
+    {
+        "id": "8d83c12e84830910",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "email already registered ",
+        "mode": "link",
+        "links": [
+            "388da78db955a905"
+        ],
+        "x": 1055,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f8648cf236decd03",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to reset signup form data",
+        "links": [
+            "513a4a2f462c3928"
+        ],
+        "x": 595,
+        "y": 660,
+        "wires": [
+            [
+                "96a6e2c5cc7e66d2"
+            ]
+        ]
+    },
+    {
+        "id": "96a6e2c5cc7e66d2",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Reset signup form data",
+        "func": "msg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 660,
+        "wires": [
+            [
+                "b343a7375795bf93"
+            ]
+        ]
+    },
+    {
+        "id": "b343a7375795bf93",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "reset signup form",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 1005,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2070f46b81454f64",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "signup form preserver to signup form",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 725,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "513a4a2f462c3928",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "resert form data",
+        "mode": "link",
+        "links": [
+            "f8648cf236decd03"
+        ],
+        "x": 1285,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2a61da6564bc79da",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "home page director",
+        "info": "",
+        "x": 410,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9e715840cc79c9c3",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "check if valid login credentials",
+        "info": "",
+        "x": 1020,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d7f7ba7a475fabaf",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "link to home",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 1695,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1ea2e1fd75f4ecf8",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "Directed to home page",
+        "info": "",
+        "x": 1480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a9d64d68947c29f2",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "info": "\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_SignUpSuccess\",\"Home_HomeMenuButtons\",",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "72e85977b95a16c8",
+        "type": "ui_form",
+        "z": "d16297ee91306ed1",
+        "name": "Login form",
+        "label": "",
+        "group": "6665df2b7775eee3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password ",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "Login",
+        "cancel": "Reset",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "4a332879024f6a22"
+            ]
+        ]
+    },
+    {
+        "id": "a55349cfee3fdd85",
+        "type": "ui_button",
+        "z": "d16297ee91306ed1",
+        "name": "SignUp button",
+        "group": "6665df2b7775eee3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Sign up",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 640,
+        "wires": [
+            [
+                "a6e53c1d36d8d3d6",
+                "7b79ce84c8d8425f"
+            ]
+        ]
+    },
+    {
+        "id": "28340d3f77502e69",
+        "type": "ui_ui_control",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "events": "change",
+        "x": 1040,
+        "y": 680,
+        "wires": [
+            [
+                "22c250883aeb39f7"
+            ]
+        ]
+    },
+    {
+        "id": "14e0eff2aaa57d58",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "hide login form and show signup form",
+        "func": "msg.payload = { \"group\": { \"hide\": [\"Home_Login\"] ,\"show\":[\"Home_LoginMenuDirector\",\"Home_SignupForm\"]}};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 680,
+        "wires": [
+            [
+                "28340d3f77502e69"
+            ]
+        ]
+    },
+    {
+        "id": "22c250883aeb39f7",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "loginToSignup",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 1185,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c737c69f38fb9317",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "signup director",
+        "info": "",
+        "x": 380,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1f819cd6cac5fbdd",
+        "type": "ui_ui_control",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "events": "change",
+        "x": 1060,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6290c7481172a8ab",
+        "type": "change",
+        "z": "d16297ee91306ed1",
+        "name": "Hide and show group setters for Login page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Home_Login\"],\"hide\":[\"Home_ChangePassword\",\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_SignUpSuccess\",\"Home_HomeMenuButtons\",\"Home_LiveTracker\",\"Home_LocationHistory\",\"Home_RecentNotifications\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "1f819cd6cac5fbdd"
+            ]
+        ]
+    },
+    {
+        "id": "a0226009a7ae8014",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "On page load",
+        "info": "",
+        "x": 350,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "704ab2e9b8adcbc0",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "If already logged in redirect to home",
+        "info": "",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "491bd2fb5efaa746",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to login",
+        "links": [
+            "f7a4a16a6a1b7340",
+            "cda223a4ec0c2b5c",
+            "9fbe594df7200d16",
+            "dea4482681bc10c5",
+            "4541b6e53cf23b68",
+            "325514b1eab56575",
+            "67228bfa561feb7c"
+        ],
+        "x": 195,
+        "y": 180,
+        "wires": [
+            [
+                "e62fa6df08f42272"
+            ]
+        ]
+    },
+    {
+        "id": "17f2a67e1ddea191",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "Set context email",
+        "func": "var email = msg.payload.email;\nglobal.set(\"email\",email);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 380,
+        "wires": [
+            [
+                "d7f7ba7a475fabaf"
+            ]
+        ]
+    },
+    {
+        "id": "7f3b70454f6d880d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "login to home 2",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 675,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "dda93fbca03005c8",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "Login to home1",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 635,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4a332879024f6a22",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "form data set in flow scope",
+        "func": "var email = msg.payload.email;\nvar password = msg.payload.password;\nflow.set(\"email\",email);\nflow.set(\"password\",password);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "b487e28cabe69cda"
+            ]
+        ]
+    },
+    {
+        "id": "e62fa6df08f42272",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "dda93fbca03005c8"
+            ],
+            [
+                "6290c7481172a8ab"
+            ]
+        ]
+    },
+    {
+        "id": "b487e28cabe69cda",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "d7f7ba7a475fabaf"
+            ],
+            [
+                "9f789ec4089290e1",
+                "736aad2e2746bd76"
+            ]
+        ]
+    },
+    {
+        "id": "a6e53c1d36d8d3d6",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "7f3b70454f6d880d"
+            ],
+            [
+                "14e0eff2aaa57d58"
+            ]
+        ]
+    },
+    {
+        "id": "822d34a3649f4542",
+        "type": "subflow:e0571323139eb71d",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 540,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9889d1cd43ac11fb",
+        "type": "ui_toast",
+        "z": "d16297ee91306ed1",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "msg.payload",
+        "name": "Wrong credentials notifier",
+        "x": 1530,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0997157c430c730e",
+        "type": "inject",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "822d34a3649f4542"
+            ]
+        ]
+    },
+    {
+        "id": "9f789ec4089290e1",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "839352e236f8d605"
+        ],
+        "x": 815,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "736aad2e2746bd76",
+        "type": "subflow:07cdddf4fb9a8917",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 1020,
+        "y": 380,
+        "wires": [
+            [
+                "17f2a67e1ddea191"
+            ],
+            [
+                "701173f0a70b58ba",
+                "15bc8680c7367d66"
+            ]
+        ]
+    },
+    {
+        "id": "701173f0a70b58ba",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "function 32",
+        "func": "msg.payload = msg.payload.message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 460,
+        "wires": [
+            [
+                "9889d1cd43ac11fb"
+            ]
+        ]
+    },
+    {
+        "id": "15bc8680c7367d66",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "Form data preserver",
+        "func": "var email = flow.get(\"email\");\nvar password = flow.get(\"password\");\nmsg.payload={\n    \"email\":email,\n    \"password\":password\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "c2d2953b8182920d"
+            ]
+        ]
+    },
+    {
+        "id": "fcd78dd1e743516a",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to login form",
+        "links": [
+            "6cddf08e62a5fe0d",
+            "c2d2953b8182920d"
+        ],
+        "x": 45,
+        "y": 340,
+        "wires": [
+            [
+                "72e85977b95a16c8"
+            ]
+        ]
+    },
+    {
+        "id": "c2d2953b8182920d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "form data preserver to login form",
+        "mode": "link",
+        "links": [],
+        "x": 695,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "112c266a1ec45170",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to reset login form",
+        "links": [
+            "7b79ce84c8d8425f"
+        ],
+        "x": 865,
+        "y": 820,
+        "wires": [
+            [
+                "3cd201a28eb88503"
+            ]
+        ]
+    },
+    {
+        "id": "3cd201a28eb88503",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "reset login form",
+        "func": "msg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 820,
+        "wires": [
+            [
+                "6cddf08e62a5fe0d"
+            ]
+        ]
+    },
+    {
+        "id": "6cddf08e62a5fe0d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "reset login form to login form",
+        "mode": "link",
+        "links": [
+            "fcd78dd1e743516a"
+        ],
+        "x": 1195,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7b79ce84c8d8425f",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "signup button to login form reset",
+        "mode": "link",
+        "links": [
+            "112c266a1ec45170"
+        ],
+        "x": 365,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c1be4d639770f0a6",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7c4e2aaf1f678241",
+                "e9564f5095fd0f1f"
+            ]
+        ]
+    },
+    {
+        "id": "7c4e2aaf1f678241",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40d12b46b555f010",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 400,
+        "wires": [
+            [
+                "337171d53f6e46ce"
+            ]
+        ]
+    },
+    {
+        "id": "65bb789fd8ed6d3f",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "337171d53f6e46ce",
+        "type": "cloudantplus-selector in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "65bb789fd8ed6d3f"
+            ]
+        ]
+    },
+    {
+        "id": "e9564f5095fd0f1f",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bc57e5437af08cb0",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "POST",
+        "info": "",
+        "x": 250,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d79e4792f9493746",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "GET",
+        "info": "",
+        "x": 250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "09b2faf02b82c2df",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "5953b1ae794a3782",
+                "fcded6cf453a51e7"
+            ]
+        ]
+    },
+    {
+        "id": "5953b1ae794a3782",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": false,
+        "operation": "delete",
+        "x": 750,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcded6cf453a51e7",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "fc034117c0ecbdcf",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "DELETE",
+        "info": "",
+        "x": 240,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4c216fc3785cb051",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 760,
+        "wires": [
+            [
+                "ae198f37ccd6c9aa",
+                "4f07ef4956cc4c71"
+            ]
+        ]
+    },
+    {
+        "id": "ae198f37ccd6c9aa",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 630,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f07ef4956cc4c71",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1cf40ff6e597dcad",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "UPDATE",
+        "info": "",
+        "x": 220,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "92ebca193b48006f",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 990,
+        "y": 600,
+        "wires": [
+            [
+                "e602c00f7cfb700a"
+            ]
+        ]
+    },
+    {
+        "id": "cb1a3bec3fca77cb",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "SEARCH",
+        "info": "",
+        "x": 1120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a003f683c8b9ae87",
+        "type": "cloudantplus-selector in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 1570,
+        "y": 560,
+        "wires": [
+            [
+                "979cdd6ba69ea6a6"
+            ]
+        ]
+    },
+    {
+        "id": "e602c00f7cfb700a",
+        "type": "function",
+        "z": "7cbf2efbe14a9622",
+        "name": "function 27",
+        "func": "msg.payload._id = msg.req.params.id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 560,
+        "wires": [
+            [
+                "a003f683c8b9ae87",
+                "c2563c60a0370da7"
+            ]
+        ]
+    },
+    {
+        "id": "c2563c60a0370da7",
+        "type": "debug",
+        "z": "7cbf2efbe14a9622",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "979cdd6ba69ea6a6",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1730,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1fe588204c3ae8e2",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "getEmailDocument",
+        "url": "/getUser/:email",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "293185f1dcae785c"
+            ]
+        ]
+    },
+    {
+        "id": "1aae1f62c7cdbe76",
+        "type": "debug",
+        "z": "60ed8df9984e056d",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "293185f1dcae785c",
+        "type": "subflow:07cdddf4fb9a8917",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "1aae1f62c7cdbe76"
+            ],
+            [
+                "1aae1f62c7cdbe76"
+            ]
+        ]
+    },
+    {
+        "id": "396b0a44a967e0b4",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Login Validator",
+        "info": "",
+        "x": 300,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "379103b6d6389747",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Signup validator",
+        "info": "",
+        "x": 280,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3def8042dc1b4391",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "signup call",
+        "url": "/users/signup",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "e1071a60b7cb16be",
+                "fd41c88b55a98885"
+            ]
+        ]
+    },
+    {
+        "id": "e1071a60b7cb16be",
+        "type": "subflow:7ebdbadd2fa727b7",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fd41c88b55a98885",
+        "type": "http response",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "17bb7d24d0352d6e",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Location entry",
+        "info": "",
+        "x": 250,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7b3a55c6a046e7b7",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "store location request",
+        "url": "/location/storeLocation",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "8fee1843b6e8f524"
+            ]
+        ]
+    },
+    {
+        "id": "8fee1843b6e8f524",
+        "type": "http response",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b96890058f36e407",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Notification entry storer",
+        "info": "",
+        "x": 300,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "96460f3ef2b620ba",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "notifications documents get",
+        "url": "/summa",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "16d32e87e2eeb90d"
+            ]
+        ]
+    },
+    {
+        "id": "285e2ae8d10eacce",
+        "type": "cloudantplus-selector out",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 690,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16d32e87e2eeb90d",
+        "type": "function",
+        "z": "60ed8df9984e056d",
+        "name": "function 36",
+        "func": "msg.payload={\n    \"time\":new Date(),\n    \"entry-type\":\"notification\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "285e2ae8d10eacce"
+            ]
+        ]
+    }]
