@@ -1,4 +1,4 @@
-Project demonstration link : https://youtu.be/_Rwl_8xa6Bs\n
+Project demonstration link : https://youtu.be/_Rwl_8xa6Bs
 Team members : 
 Madhivadhanan B R
 Krishna kumar V
